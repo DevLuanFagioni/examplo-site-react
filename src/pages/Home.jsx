@@ -1,10 +1,11 @@
-import './Home.css'
+import styles from './Home.module.css'
 import Usuario from '../components/Usuario';
 
 function Home() {
     return(
         <>
-            <h1>Usuarios</h1>
+            <h1 className={styles.titulo} >Usuarios</h1>
+            <p className={styles.paragrafo} >Abaixo terá uma lista de usuarios</p>
 
             <Usuario
                 nome='Luan'
